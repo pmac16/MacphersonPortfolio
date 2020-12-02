@@ -13,13 +13,18 @@
     transition-property: all;
     transition-duration: 0.6s;
     transition-timing-function: ease;
-
 }
 
 header {
     padding: 20px 35px;
     background-color: var(--primary-color);
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 9999;
 }
 
 header h1 {
@@ -50,12 +55,11 @@ header nav ul {
     justify-content: center;
     align-items: center;
     list-style: none;
-    font-size: 32px;
 }
 
 header nav ul li a {
     padding: 10px 15px;
-    font-size: 32px;
+    font-size: 1.55vw;
 }
 
 
@@ -132,3 +136,29 @@ svg {
     top: 0;
     width: 100%;
 }
+
+.about {
+    width: 60%;
+    margin: 0 auto;
+    padding: 50px;
+    font-family: 'Syne', sans-serif;
+}
+
+img {
+    height: 346px;
+    width: 309px;
+    display: flex;
+    padding: 15px;
+    align-items: flex-end;
+    float: left;
+}
+
+.bio {
+    float: left;
+    padding: 15px;
+    overflow: auto;
+    line-height: 1.5;
+    width: 40%;
+}
+
+
