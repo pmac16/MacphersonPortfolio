@@ -179,13 +179,13 @@ svg {
     width: 50%;
     height: 100%;
     margin: auto;
-    background-color: var(--secondary-color);
+    background-color: #fff;
     text-align: center;
     font-family: 'Syne', sans-serif;
 }
 
 .bio,
-.row2 {
+.projects {
     display: flex;
     justify-content: space-evenly;
     text-align: left;
@@ -201,7 +201,7 @@ svg {
 }
 
 footer {
-    background: var(--quaternary-color);
+    background: var(--secondary-color);
     width: 100%;
     padding: 40px 35px;
     display: flex;
@@ -209,15 +209,25 @@ footer {
     flex-wrap: wrap;
     font-family: 'Syne', sans-serif;
 }
-
-footer div {
-    line-height: 1.5;
-    text-align: right;
-    width: 60%;
-    margin: 0 auto;
+.footer {
+    width: 50%;
+    background-color:var(--secondary-color);
+    margin: auto;
+    text-align: left;
 }
 
-footer img {
-    width: 50px;
-    height: 50px;
+.footer h1 {
+    color: var(--quaternary-color);
 }
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
