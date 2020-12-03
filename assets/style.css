@@ -9,32 +9,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    box-sizing: inherit;
     transition-property: all;
     transition-duration: 0.6s;
     transition-timing-function: ease;
 }
 
 header {
-    padding: 20px 35px;
+    height: 100px;
+    width: 100%;
     background-color: var(--primary-color);
     text-align: center;
-    display: flex;
-    justify-content: space-between;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    z-index: 9999;
 }
 
 header h1 {
-    font-weight: bold;
     font-size: 52px;
     color: #fff;
-    margin: 0;
     font-family: 'Major Mono Display', monospace;
-    border-bottom: 3px solid; /*how do I make this shorter*/
-    border-color: var(--secondary-color);
 }
 
 header a {
@@ -139,25 +129,25 @@ svg {
     width: 100%;
 }
 
-.about {
-    width: 60%;
-    margin: 0 auto;
-    padding: 50px;
+.container2 {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    background-color: var(--secondary-color);
+    text-align: center;
     font-family: 'Syne', sans-serif;
 }
 
-img {
+.bio,
+.row2 {
     display: flex;
-    padding: 15px;
-    align-items: flex-end;
-    float: left;
+    justify-content: space-evenly;
+    text-align: left;
 }
 
-.bio {
-    float: left;
-    padding: 15px;
-    line-height: 1.5;
-    width: 40%;
+.about {
+    width: 350px;
+    height: 350px;
 }
 
 .bio h1 {
