@@ -2,7 +2,6 @@
     --primary-color: black;
     --secondary-color: #065E62;
     --tertiary-color:#819A9C;
-    --quaternary-color: black;
 }
 
 * {
@@ -18,7 +17,7 @@
     padding: 6em 0 8em 0;
     text-align: center;
   width: 100%;
-  background-image: url("/assets/stock-photo-dark-green-marble-texture-background-with-high-resolution-top-view-of-natural-tiles-stone-in-1429282358.jpg");
+  background-image: url("shutterstock_1429282358.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.5);
@@ -61,7 +60,7 @@
 
 /* Header */
 header {
-    height: 100px;
+    height: 50px;
     width: 100%;
     background-color: var(--primary-color);
     text-align: center;
@@ -188,7 +187,7 @@ svg {
 .bio,
 .projects {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around; 
     text-align: left;
 }
 
@@ -217,11 +216,17 @@ svg {
     color: black;
 }
 
-.bottom-left {
+.project-name {
     position: absolute;
-    bottom: 8px;
-    left: 16px;
+    bottom: 20px;
+    background-color: white;
+    color: black;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border: solid;
+    border-color: black;
 }
+
 .box1 {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -230,21 +235,13 @@ svg {
     position: relative;
 }
 
-.text-block {
-    position: absolute;
-    bottom: 20px;
-    background-color: var(--tertiary-color);
-    color: black;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    border: solid;
-    border-color: black;
-}
+
 .box2 {
     grid-column-start: 3;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+    position: relative;
 }
 
 .box3 {
@@ -252,6 +249,7 @@ svg {
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
+    position: relative;
 }
 
 .box4 {
@@ -259,6 +257,7 @@ svg {
     grid-column-end: 1;
     grid-row-start: 3;
     grid-row-end: 3;
+    position: relative;
 }
 
 .box5 {
@@ -266,13 +265,17 @@ svg {
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 3;
+    position: relative;
 }
 
+.image:hover {
+    opacity: 50%;
+}
 /* Resume */
 .resume {
-    width: 50%;
+    width: 65%;
     margin: auto;
-    padding: 10px 0px 0px 0px;
+    padding: 50px 0px 0px 0px;
     text-align: center;
     font-family: 'Syne', sans-serif;
     color: var(--quaternary-color)
@@ -280,7 +283,7 @@ svg {
 
 footer {
     background: var(--secondary-color);
-    width: 50%;
+    width: 100%;
     padding: 40px 35px;
     display: flex;
     justify-content: space-between;
