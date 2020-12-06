@@ -2,93 +2,80 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>Priya Macpherson</title>
+        <meta name="viewport" content = "width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/style.css"> 
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Syne&display=swap" rel="stylesheet">
+        <title>Priya Macpherson</title>
     </head>
 
     <body>
-
-        <div class="banner">
-            <div class="border"> </div>
-            <h2>Priya Macpherson</h2>
-            <p>Portfolio</span></p>
-            <div class="border border-bottom">  </div>
-        </div>
         <!-- Navigation -->
-        
-       <header class="buttons">
-            <nav class="container">
+        <header>
+            <nav>
                 <ul>
                     <li>
-                        <a href="#about" class="btn btn-2">
-                            <svg>
-                                <rect x="0" y="0" fill="none" width="100%"
-                                height="100%" />
-                            </svg>
-                        About
-                        </a>
+                        <a href="#about">About</a>
                     </li>
                     <li>
-                        <a href="#projects" class="btn btn-2">
-                            <svg>
-                                <rect x="0" y="0" fill="none" width="100%"
-                                height="100%" />
-                            </svg>
-                        Projects
-                        </a>
+                        <a href="#projects">Projects</a>
                     </li>
                     <li>
-                        <a href="#resume" class="btn btn-2">
-                            <svg>
-                                <rect x="0" y="0" fill="none" width="100%"
-                                height="100%" />
-                            </svg>
-                        Resume
-                        </a>
+                        <a href="#resume">Resume</a>
                     </li>
                     <li>
-                        <a href="#contact" class="btn btn-2">
-                            <svg>
-                                <rect x="0" y="0" fill="none" width="100%"
-                                height="100%" />
-                            </svg>
-                        Contact
-                        </a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </nav>
         </header>
+    
+        <!-- Hero -->
+        <section class ="banner">
+            <div class="border"></div>
+                <h2>Priya Macpherson</h2>
+                <p>Portfolio</p>
+            <div class="border border-bottom"></div>
+        </section>
 
-        <!-- About Section -->
-
-        <section class="container2">
-            <br>
-            <div id="about" class="bio">
-                <img src= "assets/Priya_.png" alt="Priya Macpherson smiles at the camera."/>               
-                <div class="about">
-                    <h1>HELLO</h1>
+    <!-- About Section -->
+        <section id="about" class="background">
+            <div class= "flex-row">
+                <h2 class="section-title primary-border">
+                    ABOUT
+                </h2>
+            </div>
+            <div class ="about-info">
+                <div class ="about-img">
+                    <img src= "assets/Priya_.png" alt="Priya Macpherson smiles at the camera."/>
+                </div>
+                <div class="about-text">
+                    <h2>HELLO</h2>
                     <br>
-                    <p> 
+                        <p> 
                         My name is Priya Macpherson. I originally began my career as an elementary school teacher. When I first started teaching, I used an overhead projector to teach my students. Now, each of my students has their own laptop and receives personalized learning through different curriculum programs. I have seen firsthand how technology affects education, and I have also seen how it disproportionaly affects schools with low economic means.
-
-                    <br>
-
+    
+                        <br>
+                        <br>
+    
                         As a web developer, I aim to change how technology is used in classrooms. With my background in teaching,
-                        I can help make sure that education technology companies are meeting the needs of teachers and students.
-                    </p>
+                        I can help make sure that education technology companies are meeting the needs of teachers and students. I have experience working with HTML, CSS, and GitHub.
+                        </p>
                 </div>
             </div>
-            <br>
+        </section>
 
         <!-- Projects -->
+        <section id="projects" class ="projects">
+            <h2 class="section-title primary-border">
+                PROJECTS
+            </h2>
+        
             <div id="projects">
-                <h1>PROJECTS</h1>
                     <br>
                 <div class="project-grid-container">
                     <div class="project-grid-item box1">
-                        <a href="https://pmac16.github.io/refractorhoriseon/" target="_blank"><img src="assets/Horiseon.png" class="image" style= "width: 100%; height: 100%"></a>
+                        <a href="https://pmac16.github.io/refractorhoriseon/" target="_blank"><img src="assets/Horiseon.png" class="image" style= "width: 100%; height: 100%" alt="Screenshot of Horiseon Deployed Website."></a>
                         <div class="project-name">
                             <h3>Horiseon Refractor</h3>
                             <p> HTML & CSS</p>
@@ -96,7 +83,7 @@
                     </div>
 
                     <div class="project-grid-item box2">
-                        <a href="https://pmac16.github.io/refractorhoriseon/"></a><img src="assets/shutterstock_1429282358.jpg" class="image"  style= "width: 100%; height: 100%"></a>
+                        <a href="https://pmac16.github.io/refractorhoriseon/"></a><img src="assets/shutterstock_1429282358.jpg" class="image"  style= "width: 100%; height: 100%" alt=""></a>
                         <div class="project-name">
                             <h3>Project Two</h3>
                             <p> Coming Soon</p>
@@ -104,7 +91,7 @@
                     </div>
 
                     <div class="project-grid-item box3">
-                        <img src="assets/shutterstock_1429282358.jpg" class="image"  style= "width: 100%; height: 100%" />
+                        <img src="assets/shutterstock_1429282358.jpg" class="image"  style= "width: 100%; height: 100%" alt="" />
                         <div class="project-name">
                             <h3>Project Three</h3>
                             <p> Coming Soon</p>
@@ -112,7 +99,7 @@
                     </div>
 
                     <div class="project-grid-item box4">
-                        <img src="assets/shutterstock_1429282358.jpg"  class="image"  style= "width: 100%; height: 100%"  />
+                        <img src="assets/shutterstock_1429282358.jpg"  class="image"  style= "width: 100%; height: 100%" alt="" />
                         <div class="project-name">
                             <h3>Project Four</h3>
                             <p> Coming Soon</p>
@@ -120,7 +107,7 @@
                     </div>
 
                     <div class="project-grid-item box5">
-                        <img src="assets/shutterstock_1429282358.jpg" class="image" style= "width: 100%; height: 100%" />
+                        <img src="assets/shutterstock_1429282358.jpg" class="image" style= "width: 100%; height: 100%" alt="" />
                         <div class="project-name">
                             <h3>Project Five</h3>
                             <p> Coming Soon</p>
