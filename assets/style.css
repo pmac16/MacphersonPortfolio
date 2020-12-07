@@ -215,16 +215,19 @@ footer div {
     max-width: 940px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 10px;
+    align-items: stretch;
 
 }
 
 .project-grid-item {
-    border: solid;
-    color: black;
+    border: 2px solid black;
     display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: center;
 }
 
 .project-name {
@@ -234,15 +237,12 @@ footer div {
     color: black;
     padding-right: 20px;
     padding-bottom: 20px;
-    border: solid;
-    border-color: black;
+    border: 2px solid black;
 }
 
 .box1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
+    grid-column: 1/ span 2;
+    grid-row: 1 / span 2;
     position: relative;
 }
 
@@ -333,6 +333,71 @@ footer div {
     .section-title {
         width: 80%;
     }
+}
 
 
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 768px) {
+    section {
+      padding: 30px 15px;
+    }
+
+    .about-info {
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .about-img {
+        flex: 0 40%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .about-text {
+        flex: 100%;
+    }
+
+    .project-grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .project-grid-item {
+        grid-column: 1;
+    }
+
+    .box1 {
+        grid-column: 1/1;
+        grid-row: 1/1;
+
+    }
+    .box2 {
+        grid-column: 1/1;
+        grid-row: 2/2;
+    }
+    .box3 {
+        grid-column: 1/1;
+        grid-row: 3/3;
+    }
+    .box4 {
+        grid-column: 1/1;
+        grid-row: 4/4;
+    }
+    .box5 {
+        grid-column: 1/1;
+        grid-row: 5/5;
+    }
+    
+    
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    .section-title {
+        width: 90%;
+    }
+    .about p {
+        width: 100%;
+    }
 }
